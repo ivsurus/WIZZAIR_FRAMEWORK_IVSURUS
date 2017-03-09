@@ -30,7 +30,7 @@ public class Main {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        selectSeatPage.go();
+
         selectSeatPage.selectRandomAvailableSeat();
     }
 

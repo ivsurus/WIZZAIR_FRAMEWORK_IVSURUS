@@ -6,8 +6,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
-
-
 public class StepsForSelectSeatPage {
 
     private WebDriver driver;
@@ -20,10 +18,8 @@ public class StepsForSelectSeatPage {
         driver = DriverSingleton.getDriver();
     }
 
-
     public void closeDriver()
-    {
-        driver.quit();
+    { driver.quit();
     }
 
     public void selectSeatWizzAir()
@@ -32,10 +28,10 @@ public class StepsForSelectSeatPage {
         selectSeatPage.selectRandomAvailableSeat();
     }
 
-    public boolean isSelectedSeatEnable()
+    /*public boolean isSelectedSeatEnable()
     {
         SelectSeatPage selectSeatPage = new SelectSeatPage(driver);
         return selectSeatPage.isSeatEnable()
-    }
+    }*/
 
 }
